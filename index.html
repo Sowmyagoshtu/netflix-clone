@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows Online, Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img decoding="async" src="img/netflix-logo.png" alt="logo"
+                    class="brand__logo" />
+            </div>
+
+            <div class="navbar__nav__items">
+                <div class="nav__item">
+                    <div class="dropdown__container" id="language-switcher">
+                        <i class="fas fa-globe"></i>
+                        <span id="language">English</span> <!-- Default to English -->
+                    </div>
+                </div>
+
+                <div class="nav__item">
+                    <button class="signin__button" id="signInBtn">Sign In</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__bg__image__container">
+                <img decoding="async"
+                    src="img/section 1.jpg"
+                    alt="Background Image" class="hero__bg__image" />
+            </div>
+            <div class="hero__bg__overlay"></div>
+
+            <div class="hero__card">
+                <h1 class="hero__title" id="hero-title">
+                    Unlimited Movies, TV,<br />
+                    Shows and More.
+                </h1>
+                <p class="hero__subtitle" id="hero-subtitle">Watch Anywhere, Cancel Anytime.</p>
+                <p class="hero__description" id="hero-description">
+                    Are you ready to watch? Enter your email to create or restart your membership.
+                </p>
+                <div class="email__form__container">
+                    <div class="form__container">
+                        <label class="email__label">
+                          <input type="email" class="email__input" id="emailInput" placeholder="Email Address">
+                        </label>
+                      </div>
+                      <button class="primary__button" id="getStartedBtn">
+                        Get Started <i class="fal fa-chevron-right"></i>
+                      </button>
+                  </div>
+            </div>
+        </section>
+        <section class="features__container">
+            <!-- Feature 1 -->
+            <div class="feature">
+                <div class="feature__details">
+                    <h3 class="feature__title" id="feature-1-title">Enjoy on your TV.</h3>
+                    <h5 class="feature__sub__title" id="feature-1-subtitle">
+                        Watch on Smart TVs, Play Station, Xbox, Chromecast, Apple TV, Blu-ray Players, and more.
+                    </h5>
+                </div>
+                <div class="feature__image__container">
+                    <img decoding="async"
+                        src="img/section 2.jpg"
+                        alt="Feature Image" class="feature__image" />
+                    <div class="feature__backgroud__video__container">
+                        <video autoplay="" loop="" muted="" class="feature__backgroud__video">
+
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature">
+                <div class="feature__details">
+                    <h3 class="feature__title" id="feature-2-title">
+                        Download to watch your shows offline.
+                    </h3>
+                    <h5 class="feature__sub__title" id="feature-2-subtitle">
+                        Easily save your favorite shows and always have something to watch.
+                    </h5>
+                </div>
+                <div class="feature__image__container">
+                    <img decoding="async"
+                        src="img/section 3.jpg"
+                        alt="Feature Image" class="feature__image" />
+                    <div class="feature__2__poster__container">
+                        <div class="poster__container">
+                            <img decoding="async"
+                                src="img/boxshot.png"
+                                alt="Poster" class="poster" />
+                        </div>
+                        <div class="poster__details">
+                            <h4 id="poster-title">Stranger Things</h4>
+                            <h6 id="poster-subtitle">Downloading...</h6>
+                        </div>
+                        <div class="download__gif__container">
+                            <img decoding="async"
+                                src="img/download-icon.gif"
+                                alt="Download GIF" class="gif" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature">
+                <div class="feature__details">
+                    <h3 class="feature__title" id="feature-3-title">Watch Everywhere.</h3>
+                    <h5 class="feature__sub__title" id="feature-3-subtitle">
+                        Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                    </h5>
+                </div>
+                <div class="feature__image__container feature__3__image__container">
+                    <img decoding="async"
+                        src="img/section 4.jpg"
+                        alt="Feature Image" class="feature__image feature__3__image" />
+                    <div class="feature__backgroud__video__container feature__3__backgroud__video__container">
+                        <video autoplay="" loop="" muted=""
+                            class="feature__backgroud__video feature__3__backgroud__video">
+
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 4 -->
+            <div class="feature">
+                <div class="feature__details">
+                    <h3 class="feature__title" id="feature-4-title">Create Profiles for Kids.</h3>
+                    <h5 class="feature__sub__title" id="feature-4-subtitle">
+                        Send kids on adventures with their favorite characters — it's free with your membership.
+                    </h5>
+                </div>
+                <div class="feature__image__container">
+                    <img decoding="async"
+                        src="img/section 5.jpg"
+                        alt="Feature Image" class="feature__image" />
+                </div>
+            </div>
+        </section>
+        <section class="FAQ__list__container">
+            <h1 class="FAQ__heading" id="faq-heading">Frequently Asked Questions</h1>
+            <div class="FAQ__list">
+                <div class="FAQ__accordian">
+                    <button class="FAQ__title" id="faq-1-title">
+                        What is Netflix?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ__visible" id="faq-1-content">
+                        <p>
+                            Netflix is a streaming service that allows you to watch unlimited TV shows and movies on smart TVs, phones, and tablets.
+                        </p>
+                    </div>
+                </div>
+                <div class="FAQ__accordian">
+                    <button class="FAQ__title" id="faq-2-title">
+                        How much does Netflix cost?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ__visible" id="faq-2-content">
+                        <p>
+                            Plans range from ₹199 to ₹799 per month. No extra fees, no contracts.
+                        </p>
+                    </div>
+                </div>
+                <div class="FAQ__accordian">
+                    <button class="FAQ__title" id="faq-3-title">
+                        How do I sign up for Netflix?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ__visible" id="faq-3-content">
+                        <p>
+                            To sign up for Netflix, visit our homepage and click on the "Sign Up" button. You will need to provide an email address and create a password. Follow the prompts to complete your subscription.
+                        </p>
+                    </div>
+                </div>
+                <div class="FAQ__accordian">
+                    <button class="FAQ__title" id="faq-4-title">
+                        What devices can I use to watch Netflix?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ__visible" id="faq-4-content">
+                        <p>
+                            You can watch Netflix on various devices, including smartphones, tablets, smart TVs, laptops, and gaming consoles. Just download the Netflix app or visit the website on your device's browser.
+                        </p>
+                    </div>
+                </div>
+                <div class="FAQ__accordian">
+                    <button class="FAQ__title" id="faq-5-title">
+                        How many screens can I watch Netflix on at the same time?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ__visible" id="faq-5-content">
+                        <p>
+                            The number of screens you can use simultaneously depends on your subscription plan. Basic plans allow one screen, while standard and premium plans allow two and four screens, respectively.
+                        </p>
+                    </div>
+                </div>
+                <div class="FAQ__accordian">
+                    <button class="FAQ__title" id="faq-6-title">
+                        Can I cancel my subscription at any time?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ__visible" id="faq-6-content">
+                        <p>
+                            Yes, you can cancel your Netflix subscription at any time. Simply go to your account settings, and follow the cancellation prompts. Your account will remain active until the end of your billing cycle.
+                        </p>
+                    </div>
+                </div>
+                <!-- Other FAQ Accordions Follow the same format with ID added -->
+            </div>
+            <div class="FAQ__get__started__email">
+                <h3 id="get-started-email">
+                    Are you ready? Enter your email to create or restart your membership.
+                </h3>
+                <div class="email__form__container">
+                    <div class="form__container">
+                        <label class="email__label">
+                            <input type="email" class="email__input" id="emailInput2" placeholder="Email Address">
+                        </label>
+                    </div>
+                    <button class="primary__button" id="getStartedBtn2">
+                        Get Started <i class="fal fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__row__1">
+            <h4 id="footer-row1">Questions? Call 000-800-040-1843</h4>
+        </div>
+        <div class="footer__row__2">
+            <div class="footer__col" id="footer1">
+                <a href="#">FAQ</a>
+                <a href="#">Media Center</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer__col" id="footer2">
+                <a href="#">Help Center</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div class="footer__col" id="footer3">
+                <a href="#">Account</a>
+                <a href="#">Careers</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Corporate Information</a>
+            </div>
+            <div class="footer__col" id="footer4">
+                <a href="#">Redeem Gift Cards</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <h5 id="footer-row2">Netflix India</h5>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
